@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "ColfaxAI";
+  font-weight: normal;
+  font-style: normal;
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2) format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "ColfaxAI";
+  font-weight: bold;
+  font-style: normal;
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
+}
+
+/* Set the base styles for the entire page */
+body {
+  font-family: "ColfaxAI", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  /* Use gradient background for a cool effect */
+}
+
+/* Style the main container */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: Top;
+  min-height: 100vh;
+  background-color: #f0f5f9;
+  background-image: linear-gradient(120deg, #fa9c84 0%, #8fd2f4 100%);
+}
+
+
+/* Style the icon */
+.main .icon {
+  width: 200px;
+  /* Add more styles for the icon as needed */
+}
+
+/* Style the heading */
+.main h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #202123;
+  margin: 24px 0 40px;
+}
+
+/* Style the form */
+.main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+}
+
+/* Style the input fields */
+.main input[type="text"] {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+  outline-color: #10a37f;
+  transition: border-color 0.2s ease;
+}
+
+.main input[type="text"]:focus {
+  border-color: #10a37f;
+}
+
+/* Style the input placeholders */
+.main ::placeholder {
+  color: #8e8ea0;
+}
+
+/* Style the submit button */
+.main input[type="submit"] {
+  padding: 12px 24px;
+  color: #fff;
+  background-color: #10a37f;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.main input[type="submit"]:hover {
+  background-color: #0e804f;
+}
+
+/* Style the result section */
+.main .result {
+  margin-top: 40px;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .main h3 {
+    font-size: 24px;
+    margin: 16px 0 30px;
+  }
+
+  .main form {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .main input[type="text"] {
+    width: 100%;
+  }
+
+  .main .result {
+    max-width: 100%;
+  }
+}
